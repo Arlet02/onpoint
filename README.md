@@ -2,8 +2,7 @@
  Oinpoint Project
 
  Author: Arlet Ponce Alvarez
- https://arlet02.github.io/oinpoit/
-
+https://arlet02.github.io/onpoint/
  Description:
  Project using HTML5, CSS3 and Vanilla JS.
  -Move between slides - by horizontal swipe
@@ -16,7 +15,7 @@
  Проект Oinpoint
 
   Автор: Арлет Понсе Альварес
-  https://arlet02.github.io/oinpoit/
+ https://arlet02.github.io/onpoint/
   Описание:
   Проект с использованием HTML5, CSS3 и Vanilla JS.
   -Перемещение между слайдами - горизонтальным смахиванием

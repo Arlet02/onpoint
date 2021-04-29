@@ -3,41 +3,37 @@
     src:url('../font/web_fonts/romancaps_regular_macroman/Roman_SD-webfont.woff') format('woff'),
     url('../font/web_fonts/romancaps_regular_macroman/Roman_SD-webfont.ttf') format('truetype'),
     url('../font/web_fonts/romancaps_regular_macroman/Roman_SD-webfont.svg') format('svg'),
-    
 }
 
 @font-face{ 
 	font-family: 'Romacesare';
     src:
     url('../font/romacesare-normal.ttf') format('truetype'),
-    /* url('../font/web_fonts/romancaps_regular_macroman/Roman_SD-webfont.svg') format('svg'), */
-    
 }
 
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
-    
     font-family:'Romacesare', 'Roman_SD', Arial, sans-serif;
-    /* font-KCfamily:   'Lucida Sans', Arial; */
-    /* font-weight: normal; */
-    /* font-family: 'Times New Roman', Times, serif; */
 }
 body{
     border: 3px solid blue;
-    width: 60vw;
-    height: 95vh;
+    /* width:64em;
+    height: 48em; */
+    width:1024px;
+    height: 768px;
     margin: 0px auto;
 }
 .container{
     width: 100%;
+    /* max-width: 1024px; */
     height: 100%;
     background-image: url("../img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 /*nav styles*/
@@ -52,7 +48,6 @@ body{
 .container__nav--space{
     padding-left: 1rem;
 }
-
 .container__nav__item--border{
     border-right: 1px solid black;
 }
@@ -60,44 +55,39 @@ body{
     width:20px;
 }
 
-
 /* container__one*/
 .container__one{
     overflow: hidden;
 }
 .container__one--text{
-    /* font-size: 70px; */
     position: relative;
     z-index: 2;
-    font-size: 6vw;
-
+    font-size: 7.5vw;
+    
     text-align: start;
     font-weight:lighter!important ;
     letter-spacing: 0.01em;
 }
 .container__one--text-greet{
-    font-size: 20px;
+    font-size: 3vw;
     padding-bottom: 5px;
 }
-.ontainer__one-block-importance{
+.container__one-block-importance{
+
     z-index: 2;
+    padding: 70px 30px;
+    height: 60%;
 }
 
 .container__one-block__btn{
-    /* background-color:#FF6A9F; */
-    /* width: 60px;
-    height: 60px; */
     display: flex;
     z-index: 3;
     align-items: center;
     position: relative;
-    /* left: 420px;
-    bottom: 140px; */
-    left: 78%;
-    bottom:10.5vh;
-    width: 40%;
-    height: 60px;
-    /* bottom: 180%!important; */
+    /* left: 550px;
+    bottom:240px; */
+    left: 100%;
+    bottom:21.5vw;
     padding: 5px 15px;
 }
 .container__one-block__btn-img-one{
@@ -107,30 +97,24 @@ body{
     font-size: 45px;
     margin-right: 10px;
     font-size: 25px;
-    /* font:small; */
     text-align: center;
-    
 }
 .container__one-block{
     width: 40vw;
     margin:0px 30px;
-    /* margin: 0; */
     padding-top: 60px; 
-    
 }
 .container__text{
     margin:30px auto;
     /* direction: rtl; */
 }
 
-
-
-
 .btn-all{
     background-color:#f14783;
     /* width: 200px;
     height: 60px; */
-    width: 40%;
+    width: 45%;
+    min-width: 150px;
     height: 60px;
     border-radius: 35px;
     font-size: large;
@@ -143,87 +127,65 @@ body{
     width: 100%; 
     height: 100%;
 }
+.two-size{
+    font-size: 2rem;
+}
 
 .container__two__content{
-  
     z-index: 3; 
     position: relative;
-    padding:1vw 4vw;
+    
+    padding:4vw 4vw;
     padding-top: 60px;
     width: 80%;
     height:80%;
-    /* width: 45vw;
-    height: 70vh;
-    overflow : auto;
-    background-color: white; */
 }
 .content--text{
-    margin:2.5vw auto;
-    /* padding:1vw; */
+    margin:4.5vw auto;
     width: 50vw;
-    height: 60vh;
+    height: 70vh;
     overflow : auto;
     direction: rtl;
     line-height: 30px;
-
 }
 
 
 .content--text::-webkit-scrollbar {
     width: 20px;
     background: linear-gradient(to right, transparent 15% , black 70%, transparent 15%);
-    /* position: absolute;  */
 } 
 
 .content--text::-webkit-scrollbar-thumb {
         background: #CE568E;
         border-radius: 90px;
-        /* position: absolute;
-        z-index: 2; */
 }
 
 .container__two__content-box{
-    position: absolute;top: 110px;left: 80px;
+    position: absolute;
+    top: 28%;
+    left: 20%;
     background:transparent; 
     z-index: 1; 
     width: 50vw;
-    height: 65vh;
-    /* border: turquoise 6px solid; */
-
+    height: 75vh;
     border-radius: 30px;
 }
 
 .container__two__content--text-inside{
     margin:10px auto; 
-    padding:1.2vw 1.4vw;
+    padding:1.2vw 0 1.2vw 3vw;
     margin-left: 2vw;
     text-align: left;
-    /* width: 90%;
-    height: 90%; */
-    /* width: 50vw; */
-    /* height: 50vh; */
-    /* overflow : auto; */
-    /* border-radius: 40px; */
-    /* background-color: white; */
     background-color: transparent;
     /* direction: rtl; */
 }
 .content--text__line{
     border: none;
-/* 
-    border-left: 5px solid black;
-    width: 5px;
-    height: 50vh;
-    position: absolute;
-    top: 10;
-    right: 1000px; */
-   
-    /* z-index: 1; */
-    
 }
 
 .container__three{
-    width: 100%; height: 100%;display:none;
+    /* width: 100%; height: 100%; */
+    display:none;
 }
 
 .container__division{
@@ -236,73 +198,74 @@ body{
 }
 
 .container__division__blocks{
-  margin:8% 8%; 
-  display: flex;
-  width: 90%;
+    margin:8% 0 4% 13%; 
+    display: flex;
+    width: 80%;
+    font-size: 1.5rem;
+    height: 70%;
 }
 
 .container__division__blocks--content{
     background-color: rgb(246, 245, 244);
     border-radius: 30px;
     align-content: center;
-    
 }
 .container__division__blocks--content-style{
-    margin: 0 20px;
-    
+    margin: 0 5px;
+    padding: 2%;
 }
 .container__division__blocks--content-img{
     position: relative;
-    width: 60px;
-    top:-25px;
-    left: 20px;
+    width: 5rem;
+    top:-2.5rem;
+    left: 0.5rem;
 }
+
 .container__division__blocks--btn{
-    width: 200px;
-    height: 50px;
-    padding: 5px;
+     width: 90%;
+    /*height: 50px; */
+    margin-top: 10px;
     align-items: center;
     align-items: center;
     display: flex;
 }
+.bottle-img{
+    position: absolute; 
+    z-index: 4!important; 
+    height:140%; 
+    left:12%;
+    bottom: -41%;
+
+}
+.three__block-one{
+    width: 70%;
+}
+.three__block-two{
+    width: 30%;
+}
 
 .popup__btn{
     background: transparent; border: none;
-    
 }
 
 .container__four__li-item{    
     font-weight: bold;
     color: #78bde9;
     margin: 10px 0;
-    /* font-style: italic; */
 }
 .container__four__li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 200px;
 }
 .container__two__images{
-    /* width: 300px;
-    height: 400px;
-    border: indigo 4px solid; */
-    /* background-color: rgb(20, 224, 54); */
-    /* opacity: 0;
-    display: block;position: absolute;top:10px;
-    right: 10px; z-index: 1;
-    border: rgb(24, 24, 117) solid 1px;  */
-    
     transition: all 10s ease;
-
     z-index: 1; display: block; 
     position: absolute;
-    top:10px;
-    right: 15px;
+    top:10%;
+    right: -7%;
     z-index: 1;
-    /* border: rgb(21, 167, 53) solid 3px; */
 }
-/* .fadein{
-    opacity: 1;
-} */
+
 .container__two__images-ful{
     width:500px;
 }
@@ -313,7 +276,6 @@ body{
     bottom: 400px; 
     left: 90px; 
     background: white;
-    /* background: transparent; */
     border-radius: 16px;
 }
 
@@ -324,8 +286,6 @@ body{
     left: 315px;
     top: 143px;
     -webkit-animation: fig_circular 4s linear infinite; /* Chrome, Safari 5 */
-    /* -moz-animation:  prueba8 4s linear infinite; Firefox 5-15 */
-    /* -o-animation:  prueba8 4s linear infinite; Opera 12+ */
     animation:  fig_circular 10s linear infinite; /* Chrome, Firefox 16+,  IE 10+, Safari 5 */
 }
 @-webkit-keyframes fig_circular {
@@ -337,20 +297,14 @@ to   { -webkit-transform: rotate(360deg) translateX(150px) }
     to   { transform: rotate(360deg) translateX(50px)  }
 }
 
-
-
 /**movements */
 /*Mov1  rotate and translates*/
 /*image rotates*/
 .rotation-circular{
     position: relative;
-    width: 80px;
-    height: 80px;
-    /* left: 315px;
-    top: 143px; */
+    width: 60%;
+    height: 100%;
     -webkit-animation: fig_circular 35s linear infinite; /* Chrome, Safari 5 */
-    /* -moz-animation:  prueba8 4s linear infinite; Firefox 5-15 */
-    /* -o-animation:  prueba8 4s linear infinite; Opera 12+ */
     animation:  fig_circular 35s linear infinite; /* Chrome, Firefox 16+,  IE 10+, Safari 5 */
 }
 @-webkit-keyframes fig_circular {
@@ -363,41 +317,39 @@ to   { -webkit-transform: rotate(-360deg)  }
 }
 /*container or father of the image translates, in this case a div*/
 .translation-circular{
-    
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: 15%;
     position: absolute;
-    right: 315px;
-    top: 143px;
+    right: 15%;
+    top: 35%;
     z-index: 3;
      -webkit-animation: translation-fig 15s linear infinite; /* Chrome, Safari 5 */
-     /* -moz-animation:  prueba8 4s linear infinite; Firefox 5-15 */
-     /* -o-animation:  prueba8 4s linear infinite; Opera 12+ */
      animation:  translation-fig 15s linear infinite; /* Chrome, Firefox 16+,  IE 10+, Safari 5 */
- }
- @-webkit-keyframes  translation-fig {
- from { -webkit-transform: rotate(0deg) translateX(25px) rotate(0deg); }
- to   { -webkit-transform: rotate(360deg) translateX(25px) rotate(-360deg); }
- }
- @keyframes  translation-fig {
-     from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
-     to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
- }
+}
+@-webkit-keyframes  translation-fig {
+    from { -webkit-transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+}
+@keyframes  translation-fig {
+    from { transform: rotate(0deg) translateX(25px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+}
 
  /*Mov2*/
  /*Diagonal movement with css*/
- .diagonal-mov {
+.diagonal-mov-bottom {
     position: relative;
-    left: 20px;
-    bottom: 80px;
+    /* left: 20px;
+    bottom: 80px; */
+    left: 5%;
+    bottom:18vh;
+    width: 15%;
+    height: 15%;
     z-index: 1;
     -webkit-animation: diagonal-ball 10s linear infinite;
     animation: diagonal-ball 10s linear infinite;
-    
-       
 }
-@keyframes diagonal-ball
-{
+@keyframes diagonal-ball{
     0%       { transform: translatex(-20px) translatey(-20px) }
     50%      { transform: translatex(10px) translatey(10px); }
     100%     { transform: translatex(-20px) translatey(-20px) }
@@ -409,16 +361,13 @@ to   { -webkit-transform: rotate(-360deg)  }
     100%     { transform: translatex(-20px) translatey(-20px) }
 }
 
-.diagonal-mov2 {
-    position: absolute;
-    /* right: 300px;
-    top: 90px;
-    z-index: 1; */
-
+.diagonal-mov-top {
+    position: absolute; width: 6%;height: 10%;right: 30%;top: 40px;z-index: 1;
+    /* position: absolute; */
+    /* right: 5%;
+    top:15vh; */
     -webkit-animation: diagonal-ball2 10s linear infinite;
     animation: diagonal-ball2 10s linear infinite;
-    
-       
 }
 @keyframes diagonal-ball2
 {
@@ -432,35 +381,84 @@ to   { -webkit-transform: rotate(-360deg)  }
     50%      { transform: translatex(10px) translatey(5px); }
     100%     { transform: translatex(-20px) translatey(-5px) }
 }
-.fondo{
-    display: relative;width: 700px; height: 100px; left: 1300px;
+
+.diagonal-mov-buble {
+    position: relative;
+    /* left: 20px;
+    bottom: 80px; */
+    /* left: 5%;
+    bottom:18vh;
+    width: 15%;
+    height: 15%; */
+    z-index: 5;
+    -webkit-animation: diagonal-buble 6s linear infinite;
+    animation: diagonal-buble 6s linear infinite;
 }
+@keyframes diagonal-buble{
+    0%       { transform: translatex(30px) translatey(30px) }
+    50%      { transform: translatex(10px) translatey(10px); }
+    100%     { transform: translatex(30px) translatey(30px) }
+}
+@-webkit-keyframes diagonal-buble
+{  
+    0%       { transform: translatex(30px) translatey(30px) }
+    50%      { transform: translatex(10px) translatey(10px); }
+    100%     { transform: translatex(30px) translatey(30px) }
+}
+
+/*images*/
+ 
 
 .bottom-img-position{
-    
-    width:10%;
-    height: 100px;
-    bottom: 4%;
-    right: 35%;
-}
-
-.bottom-img{
-    position: absolute;
-    /* right: 300px;
-    top: 390px; */
+    position: relative;
+    width:15%;
+    height: 25vh;
+    bottom: 0;
+    /* left: 350px; */
+    left: 85%;
     z-index: 1;
-
     -webkit-animation: bigger 5s linear infinite; 
     animation: bigger 5s linear infinite;
    
 }
+.top-blue-img{
+    position:absolute;right: 15%; top: 0%;width: 7%;
+}
+.bottom-pink-img{
+    position:absolute;left: 12%;
+    width: 15%;
+}
+.top-left-img{
+    /* position:relative;
+    left: 10%; top: 10%; 
+    width: 10%;
+    height: 10%; */
+
+    position: relative; top:-100px;width:20%; height: 20%;
+}
+.horizonta-img{
+    position:absolute;right: 18%; top: 33%; z-index: 3;
+    width: 41%;
+}
+.bottom-blue-img{
+    position:relative; 
+    left: 14%; 
+    bottom: 1px;
+    opacity: 0.5; 
+    width:15%;
+}
+
+.bottom-img{
+    position: absolute;
+    z-index: 1;
+    -webkit-animation: bigger 5s linear infinite; 
+    animation: bigger 5s linear infinite;
+}
 @-webkit-keyframes bigger
  { 
-     /*scale(0,0) */
     0%       { transform: none   }
     50%     { transform:   scaleX(1.2) } /*scale(1.1,1.3)*/
     100%       { transform:    none }
-
 }
 @keyframes bigger
 {  
@@ -469,16 +467,11 @@ to   { -webkit-transform: rotate(-360deg)  }
     100%       { transform:    none }
 }
 
-
 .fadein{
     position: absolute;
     z-index: 1;
     right: 250px;
-    /* right: 16em; */
-    /* left:40%; */
-    /* width: 50vw; */
     top: 0;
-
     animation-duration: 5s;
     animation-name: fadein-img;
 }
@@ -490,8 +483,6 @@ to   { -webkit-transform: rotate(-360deg)  }
     to{
         opacity: 1;
         transform: translate(0px,0px);
-        /* transform: translate(0px,0px); */
-
     }
 }
 
@@ -500,17 +491,14 @@ to   { -webkit-transform: rotate(-360deg)  }
 .boubles-dark-pink{
     -webkit-animation: dark-pink 20s linear infinite; 
     animation: dark-pink 20s linear infinite;
-   
 }
-@-webkit-keyframes dark-pink
- {     
+@-webkit-keyframes dark-pink{     
     0%       { transform:  translateX(10px)   }
     50%     { transform: translateX(-40px) }
     100%       { transform: translateX(10px)}
 
 }
-@keyframes dark-pink
-{      
+@keyframes dark-pink{      
     0%       { transform: translateX(10px)  }
     50%     { transform:  translateX(-40px) }
     100%       { transform:    translateX(10px) }

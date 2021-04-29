@@ -18,10 +18,10 @@
 }
 body{
     border: 3px solid blue;
-    /* width:64em;
-    height: 48em; */
-    width:1024px;
-    height: 768px;
+    width:64em;
+    height: 48em;
+    /* width:1024px;
+    height: 768px; */
     margin: 0px auto;
 }
 .container{

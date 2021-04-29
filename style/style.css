@@ -162,7 +162,7 @@ body{
 
 .container__two__content-box{
     position: absolute;
-    top: 28%;
+    top: 25%;
     left: 20%;
     background:transparent; 
     z-index: 1; 
@@ -232,9 +232,9 @@ body{
 .bottle-img{
     position: absolute; 
     z-index: 4!important; 
-    height:140%; 
+    height:120%; 
     left:12%;
-    bottom: -41%;
+    bottom: -23%;
 
 }
 .three__block-one{
@@ -341,8 +341,8 @@ to   { -webkit-transform: rotate(-360deg)  }
     position: relative;
     /* left: 20px;
     bottom: 80px; */
-    left: 5%;
-    bottom:18vh;
+    left: 6%;
+    bottom:28vh;
     width: 15%;
     height: 15%;
     z-index: 1;
@@ -413,7 +413,7 @@ to   { -webkit-transform: rotate(-360deg)  }
     position: relative;
     width:15%;
     height: 25vh;
-    bottom: 0;
+    bottom: 22px;
     /* left: 350px; */
     left: 85%;
     z-index: 1;
@@ -434,16 +434,20 @@ to   { -webkit-transform: rotate(-360deg)  }
     width: 10%;
     height: 10%; */
 
-    position: relative; top:-100px;width:20%; height: 20%;
+    position: relative; 
+    width:20%;
+    height: 20%;
+    bottom:680px;
+    right: 38%;
 }
 .horizonta-img{
-    position:absolute;right: 18%; top: 33%; z-index: 3;
+    position:absolute;right: 18%; top: 30%; z-index: 3;
     width: 41%;
 }
 .bottom-blue-img{
     position:relative; 
     left: 14%; 
-    bottom: 1px;
+    bottom: 40px;
     opacity: 0.5; 
     width:15%;
 }
